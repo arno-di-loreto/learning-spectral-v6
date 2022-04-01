@@ -1,0 +1,26 @@
+swagger: "2.0"
+info:
+  title: Demo API
+  version: "1.0"
+
+paths:
+  /resources:
+    get:
+      summary: This is a very long and boring description that shouldn't be in a summary
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  properties:
+                    id:
+                      type: string
+                    name:
+                      type: string
+                    resource_date:
+                      type: integer
+        default:
+          description: Error
